@@ -1,0 +1,65 @@
+.battleFieldContainer {
+  display: grid;
+  grid-template-rows: auto auto; // 2 rows
+  align-items: stretch; // don't force centering
+  width: 100px;
+  height: 200px;
+  padding: 10px;
+  //   border: 1px solid red;
+}
+
+.pokemonStat {
+  //padding: 2px;
+  //   border: 1px solid blue;
+  text-align: left;
+}
+
+.displayPokemon {
+  align-self: start; // align to top of its row
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  height: 80px;
+  background-color: #b5cc18;
+}
+
+.statItem {
+  align-self: end;
+}
+
+.pokemonName {
+  font-weight: bold;
+}
+
+.statDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 2px;
+  margin: 5px 0;
+}
+
+.hpBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  //   padding: 2px;
+}
+
+.hpStat {
+  text-align: center;
+}
+
+.hpDrain {
+  width: 50px;
+  height: 12px;
+  background-color: red;
+  border-radius: 40px;
+}
+
+.sprite {
+  transform: scaleX(-1);
+}

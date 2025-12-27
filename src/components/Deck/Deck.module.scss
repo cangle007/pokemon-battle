@@ -1,0 +1,32 @@
+.deckContainer {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  //   height: 400px;
+  width: 100px;
+  justify-items: center;
+  padding: 7px;
+  border: 1px solid #0c1e35;
+}
+
+.playerItem {
+  //padding: 7px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.deckItem {
+  display: grid;
+  gap: 10px;
+}
+
+.pokemon {
+  display: flex;
+  justify-content: center;
+  transform: scaleX(-1);
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid #a4abbd;
+}
