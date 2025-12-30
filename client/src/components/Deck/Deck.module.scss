@@ -2,7 +2,6 @@
   display: grid;
   grid-template-rows: auto auto;
   gap: 10px;
-  //   height: 400px;
   width: 100px;
   justify-items: center;
   padding: 7px;
@@ -10,7 +9,6 @@
 }
 
 .playerItem {
-  //padding: 7px 0;
   font-size: 18px;
   font-weight: bold;
 }
@@ -29,4 +27,5 @@
   height: 40px;
   border-radius: 7px;
   border: 1px solid #a4abbd;
+  cursor: pointer;
 }
