@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/pokemonAPI-elevenlabs.io/',
   server: {
     proxy: {
       '/api': 'http://localhost:8787',
