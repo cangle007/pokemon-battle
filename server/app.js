@@ -4,10 +4,17 @@ const cors = require('cors');
 const { Readable } = require('node:stream');
 const { ElevenLabsClient } = require('@elevenlabs/elevenlabs-js');
 
+const corsOptions = {
+  origin: ['https://cangle007.github.io', 'http://localhost:5173'],
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+};
+
 const audioCache = new Map();
 const app = express();
 
-app.use(cors()); // or restrict origins later
+app.use(cors(corsOptions)); // or restrict origins later
+app.options('*', cors(corsOptions));
 app.use(express.json({ limit: '1mb' }));
 
 const elevenlabs = new ElevenLabsClient({
