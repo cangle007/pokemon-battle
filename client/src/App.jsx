@@ -17,7 +17,7 @@ const App = () => {
     <div className='App'>
       <Provider store={store}>
         <Suspense fallback={<Loader />}>
-          <Router>
+          <Router basename={import.meta.env.BASE_URL}>
             <Routes>
               <Route path='/' element={<MainContainer />} />
             </Routes>
