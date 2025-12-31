@@ -1,6 +1,8 @@
+import { API_BASE } from './config/api';
+
 const createVoice = (selectedVoice) => {
   return async () => {
-    const resp = await fetch('/api/tts', {
+    const resp = await fetch(`${API_BASE}/api/tts`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
