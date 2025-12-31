@@ -14,7 +14,7 @@ const audioCache = new Map();
 const app = express();
 
 app.use(cors(corsOptions)); // or restrict origins later
-app.options('*', cors(corsOptions));
+app.options(/.*/, cors(corsOptions));
 app.use(express.json({ limit: '1mb' }));
 
 const elevenlabs = new ElevenLabsClient({
