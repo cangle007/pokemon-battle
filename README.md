@@ -1,6 +1,7 @@
-# React + AI Voices(elevenlabs)
+# React + AI Voices (ElevenLabs)
 
-Used Pokemon API and elevenLabs AI voices to create an auditory experience.
+Used Pokemon API and ElevenLabs AI voices to create an auditory experience.
 
-[Link](https://cangle007.github.io/pokemonAPI-elevenlabs.io/)
+https://cangle007.github.io/pokemonAPI-elevenlabs.io/
+
 ![Architecture diagram](./client/images/preview.png)
