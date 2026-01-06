@@ -4,4 +4,15 @@ Used Pokemon API and ElevenLabs AI voices to create an auditory experience.
 
 https://cangle007.github.io/pokemonAPI-elevenlabs.io/
 
-![Architecture diagram](./client/images/preview.png)
+![Architecture diagram](./client/images/preview.png)\
+
+# Technologies:
+
+- Frontend
+  - React
+- APIs/Services
+  - Pokemon API
+  - ElevenLabs
+- Backend
+  - Node.js
+  - Express.js
